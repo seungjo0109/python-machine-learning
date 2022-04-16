@@ -13,3 +13,13 @@
 ### [Simple numpy array example](./simple_array.py)
 
 </br>
+
+
+### 2. Function to Create Arrays
+
+* There are more convenience functions for creating fixed-sized arrays that you may encounter or be required to use.
+
+</br>
+
+### 2.1 Empty
+* The empty() function will create a new array of the specified shape.
