@@ -61,4 +61,8 @@
 
 </br>
 
+### [Combining arrays example](./combining_array.py)
+
+</br>
+
 ### Reference: Basics of Linear Algebra for Machine Learning - Discover the Mathematical Language of Data in Python
