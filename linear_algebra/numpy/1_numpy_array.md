@@ -23,3 +23,42 @@
 
 ### 2.1 Empty
 * The empty() function will create a new array of the specified shape.
+* The argument to the function is an array or tuple that specifies the length of each dimenstion of the array to create.
+* The values or content of the created array will be random and will need to be assigned before use.
+
+</br>
+
+### 2.2 Zeros
+* The zeros() function will create a new array of specified size with the contents filled with zero values.
+* The argument to the function is an array or tuple that specifies the length of each dimension of the array to create.
+
+</br>
+
+### 2.3 ones
+* The ones() function will create a new array of the specified size with the contents filled with on values.
+* The argument to the function is an array or tuple that specifies the length of each dimension of the array to create.
+
+</br>
+
+### [Create array function example](./function_crate_array.py)
+
+</br>
+
+## 3. Combining Arrays
+
+* Numpy provides many functions to create new arrays from existing arrays.
+* Let's look at two of the most pupular functions you may need or encounter.
+
+</br>
+
+## 3.1 Vertical Stack
+* Given two or more existing arrays, you can stack them vertically using the vstack() function.
+* For example, given two one-dimensional arrays, you can create a new two-dimensional array with two rows by vertically stacking them.
+
+## 3.2 Horizontal Stack
+* Given two or more existing arrays, you can stack them horizontally using the hstack() function.
+* For example, given two on-dimensional arrays, you can create a new one-dimensional array or one row with the columns of the first and second arrays concatenated.
+
+</br>
+
+### Reference: Basics of Linear Algebra for Machine Learning - Discover the Mathematical Language of Data in Python
