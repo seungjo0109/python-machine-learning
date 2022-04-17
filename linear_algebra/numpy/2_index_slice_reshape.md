@@ -28,5 +28,27 @@
 
 </br>
 
+## 2. Array Indexing
+* Once your data is represented using a NumPy array, you can access it using indexing.
+
+</br>
+
+## 2.1. One-Dimensional Indexing
+* Generally, indexing works you would expect from your experience with other programming languages, like Java, C#, C++.
+* For example, you can access elements using the bracket operator [] specifying the zero-offset index for the value to retrieve.
+* One key difference is that you can use negative indexes to retrieve values offset from the end of the array.
+* For example, the index -1 refers to the last item in the array.
+
+</br>
+
+## 2.2 Two-Dimensional Indexing
+* Indexing two-dimensional data is simialar to indexing one-dimesional data, exept that a comma is used to seperate the index for each dimension.
+* If we are interested in all items in the first row, we could leave the second dimension index empty
+
+</br>
+
+### [Array indexing example](./array_indexing.py)
+
+</br>
 
 ### Reference: Basics of Linear Algebra for Machine Learning - Discover the Mathematical Language of Data in Python
