@@ -115,4 +115,10 @@
 * This is clear with an example where each sequence has multiple time steps with one observation (feature) at each time step.
 * We can use the sizes in the shape attribution on the array to specify the number of samples (rows) and columns (time steps) and fix the number of features at 1.
 
+</br>
+
+[Array reshaping example](./array_reshaping.py)
+
+</br>
+
 ### Reference: Basics of Linear Algebra for Machine Learning - Discover the Mathematical Language of Data in Python

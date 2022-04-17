@@ -129,4 +129,6 @@ red, green, blue
 * Scaled up to multiple dimensions, deep learning methods work with vectors, matrices and even tensors of inputs and coefficients, where a tensor is a matrix with more than two dimensions.
 * Linear algebra is central to the description of deep learning methods via matrix notation to the implementation of deep learning methods such as Google's TensorFlow Python library that has the word "tensor" in its name.
 
+</br>
+
 ### Reference: Basics of Linear Algebra for Machine Learning - Discover the Mathematical Language of Data in Python
