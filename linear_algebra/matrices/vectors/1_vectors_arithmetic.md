@@ -25,3 +25,45 @@
 [Defining vector example](./defining_vector.py)
 
 </br>
+
+### 3. Vector Arithmetic
+* In this section will demostrate simple vector-vector arithmetic, where all operations are performed element-wise between two vectors of equal length to result in a new vector with the same length.
+
+</br>
+
+### 3.1. Vector Addition
+* Two vectors of equal length can be added together to create a new third vector.
+<br>$c = a + b$
+
+* The new vector has the same length as other two vectors. Each element of the new vector is calculated as the addition of the elements of the other vectors at the same index
+
+</br>
+
+### 3.2. Vector Substraction
+* On vector can be substracted from another vector of equal length to create a new third vector.
+<br>$c = a - b$
+
+* As with addition, the new vector has the same length as the parent and each element of the new vector is caculated as the subsctraction of the elements at the same indices.
+<br>$c = (a_1 - b_1, a_2 - b_2, a_3 - b_3)$
+
+</br>
+
+### 3.3. Vector Multiplication
+* Two vectors of equal length can be multiplied together.
+<br>$c = a \times b$
+
+* As with addition and substraction, this operation is performed element-wise to in a new of the same length.
+<br>$c = (a_1 \times b_1, a_2 \times b_2, a_3 \times b_3)$
+
+</br>
+
+### 3.4. Vector Division
+* Two vectors of equal length can be deivided.
+<br> $c = \frac{a}{b}$
+
+* As with other arithmetic operations, this operation is performed element-wise to result in a new vector of the same length.
+<br>$c = (\frac{a_1}{b_1}, \frac{a_2}{b_2}, \frac{a_3}{b_3})$
+
+</br>
+
+[Vector Arithmetic example](vector_arthmetic.py)
