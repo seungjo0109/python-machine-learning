@@ -66,4 +66,17 @@
 
 </br>
 
-[Vector Arithmetic example](vector_arthmetic.py)
+[Vector Arithmetic example](./vector_arthmetic.py)
+
+</br>
+
+### 4. Vector Dot Product
+* We can calculate the sum of the multiplied elements of two vectors of the same length to giva a scalar. This is called the dot product, named because of the dot operator used when describing the operation.
+
+* $c = a \cdot b$
+* $c= (a_1 \times b_1 + a_2 \times b_2 + a_3 \times b_3) $
+
+</br>
+
+[Vector dot product](./vector_dot_product.py)
+
