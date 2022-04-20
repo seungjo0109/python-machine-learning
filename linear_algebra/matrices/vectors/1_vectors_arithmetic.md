@@ -80,3 +80,7 @@
 
 [Vector dot product](./vector_dot_product.py)
 
+### 5. Vector-Scalar Multiplication
+* A vector can be multiplied by a scalar, in effect scailing the magnitude of the vector. To keep notation simple, we will use lowercase $s$ to represent the scalar value.
+* $c = s \times v$
+* $c= (s \times v_1, s \times v_2, s \times v_3) $
