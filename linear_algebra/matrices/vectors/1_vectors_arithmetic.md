@@ -84,3 +84,7 @@
 * A vector can be multiplied by a scalar, in effect scailing the magnitude of the vector. To keep notation simple, we will use lowercase $s$ to represent the scalar value.
 * $c = s \times v$
 * $c= (s \times v_1, s \times v_2, s \times v_3) $
+
+</br>
+
+### Reference: Basics of Linear Algebra for Machine Learning - Discover the Mathematical Language of Data in Python
