@@ -24,8 +24,6 @@
 * Density functions are functions that describe how the proportion of data or likelihood of the proportion of observations change over the range of the distribution.
 * Two types of density functions are probability density functions and cummulative density functions.
 
-</br>
-
     * __Probability Density function__: calculates the probability of observing a given value.
     * __Cummulative Density function__: calculates the probability of an observation equal or less than a value.
 
@@ -92,6 +90,70 @@ The `norm.cdf()` function can be used to create a Gaussian cummulative density f
 </br>
 
 ![Gaussian cummulative distribution](./gaussian_cdf1.png)
+
+</br>
+
+### 3. Student's t-Distribution
+* The Student's t-distribution, or just t-distribution for short, is named for the pseudonym _Student_ by William Sealy Gosset.
+* It is a distribution that arises when attempting to estimate the mean of a normal distribution with different sized samples.
+* As such, it is a helpful shortcut when describing uncertainty or error related to estimating population statistics for data drawn from Gaussian distributions when the size of the sample must be taken into account.
+* Although you may not use the Student's t-distribution directly, you may estimate values from the distribution required as parameters in other statistical methods, such as statistical significance tests.
+* The distribution can be described using a single parameter:
+
+    * number of degrees of freedom: denoted with the lowercase Greek letter nu $(\nu)$, denotes the number degrees of freedom.
+
+</br>
+
+* Key to the use of the t-distribution is knowing the desired number of degrees of freedom. The number of degrees of freedom describes the number of pieces of information used to describe a population quantity.
+* For example, the mean has $n$ degrees of freedom as all $n$ observations in the sample are used to calculate the estimate of the population mean.
+* A statistical quantity that makes use of another statistical quantity in its calculation must substract 1 from the degrees of freedom, such as the use of the mean in the calculation of the sample variance.
+* Observations in a Student's t-distribution are calculated from observations in a normal distribution in order to describe the interval for the polulations mean in the normal distribution.
+* Observations are calculated as:
+
+<br?>
+
+* $ data = x - \frac{mean(x)}{\frac{S}{\sqrt n}}  $
+
+</br>
+
+* Where $x$ is the observations from the Gaussian distribution, _mean_ is the average observation of $x$, $S$ is the standard deviation and $n$ is the total number of observations.
+* The resulting observations form the t-observation with $(n-1)$ degrees of freedom.
+* In practice, if you require a value from a t-distribution in the calculation of a statistic, then the number of degrees of freedom will likely be $n-1$, where $n$ is the size of your sample drawn from a Gaussian distribution.
+
+</br>
+
+* `SciPy` provides tools for working with the t-distribution in the `stats.t` module.
+* The `t.pdf()` function can be used to create a Student's t-distribution with the specified degrees of freedom.
+
+</br>
+
+[t-disribution pdf example](./t_distribution_pdf.py)
+
+</br>
+
+* Running the example creates and plots the t-distribution PDF.
+* We can see the familiar bell-shape to the distribution much like the normal.
+* A key difference is the fatter tails in the distribution, highlighting the increased likelihood of observations in the tails compared to that of the Gaussian
+
+</br>
+
+![t_distribution_pdf](./t_distribution_pdf1.png)
+
+</br>
+
+* The `t.cdf()` function can be used to create the cummulative density function for the t-distribution.
+
+</br>
+
+[t-disribution cdf example](./t_distribution_cdf.py)
+
+</br>
+
+* Running the example, we see the familiar S-shaped curve as we see with the Gaussian distribution, although with slightly softer transitions from zero-probability to one-probability for the fatter tails.
+
+</br>
+
+![t_distribution_cdf](./t_distribution_cdf1.png)
 
 </br>
 
