@@ -81,7 +81,40 @@
 
 </br>
 
+### 5. Identity Matrix
+* An identity matrix is a square matrix that does not change a vector when multiplied. The values of an identity matrix are known. All of the scalar values along the main diagonal (top-left to bottom-right) have the value one, while all other values are zero.
+* An identity matrix is often represented using the notation $I$ or with the dimensionality $I^n$, where $n$ is a subscript that indicates the dimensionality of the square identity matrix.
+* In some notations, the identity may be referred to as the unit matrix, or $U$, to honor the one value it contains (this is different from a Unitary matrix).
+* In NumPy, an identity matrix can be created with a specific size using the `identity()` function.
 
+</br>
+
+[Identity matrix example](./identity.py)
+
+</br>
+
+### 6. Orthogonal Matrix
+* Two vectors are orthogonal when their dot product equals zero. The length of each vector is 1 then the vectors are called orthonormal because they are both orthogonal and normalized.
+
+$ v \cdot w = 0 $  or  $ v \cdot w^T = 0 $
+
+* This is intuitive when we consider that one line is orthogonal with another if it is perpendicular to it.
+* An orthogonal matrix is a type of square matrix whose columns and rows are orthonromal unit vectors, e.g. perpendicular and have a length or magnitude of 1.
+
+* An orthogonal matrix is a square matrix whose rows are mutually orthonormal and whose are mutually orthnormal.
+
+* Where $Q$ is the orthogonal matrix, $Q^T$ indicates the transpose of $Q$, and $I$ is the identity matrix. A matrix is orthogonal if its transpose is equal to its inverse.
+
+* $Q^T = Q^{-1}$
+
+* Orthogonal matrices are used a lot for linear transformations, such as relections and permutations.
+
+[Orthogonal matrix example](./orthgonal_matrix.py)
+
+</br>
+
+* Running the example first prints the orthogonal matrix, the inverse of the orthogonal matrix, and the transpose of the orthogonal matrix are then printed and are shown to be equivalent.
+* Finally, the identity matrix is printed which calculated from the dot product of the orthogonal matrix with its transpose.
 
 </br>
 
