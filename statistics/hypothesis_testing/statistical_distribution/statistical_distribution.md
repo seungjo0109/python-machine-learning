@@ -157,7 +157,55 @@ The `norm.cdf()` function can be used to create a Gaussian cummulative density f
 
 </br>
 
+### 4. Chi-Squared Distribution
+* The Chi-Squared distribution is denoted as the lowercase Greeck letter chi $(\chi)$ pronouncde "ki" as in "kite", raised to the second power $(\chi^2)$. It is easier to write _Chi-Squared_.
+* Like the Student's t-distribution, the Chi-Squared distribution is also used in statistical methods on data drawn from a Gaussian distribution to quantify the uncertainty.
+* For example, the Chi-Squared distribution is used in the Chi-Squared statistical tests for independence.
+* In fact, the Chi-Squared distribution is used in the derivation of the Student's t-distribution.
+* The Chi-Squared distribution has on parameter:
+    * degrees of freedom, denoted $k$
+* An observation in a Chi-Squared distribution is calculated as the sim of $k$ squared observations drawn from a Gaussian distribution.
 
+* $ chi = \sum_{i=1}^{k}x^2_i $
+
+* Where $chi$ is an observation that has a Chi-Squared distribution, $x$ are observation drawn from a Gaussian distribution, and $k$ is the number of $x$ observations which is also the number of degrees of freedom for the Chi-Squared distribution.
+* Again, as with the Student's t-distribution, data does not fit a Chi-Squared distribution; instead, observations are drawn from this distribution in the calculation of statistical methods for a sample of Gaussian data.
+
+</br>
+
+* SciPy provides the `stats.chi2` module for calculate the Chi-Squared distribution for a sample space between 0 and 50 with 20 degrees of freedom.
+
+</br>
+
+[Chi-Squared probability density function](./chi_squared_pdf.py)
+
+</br>
+
+* Running the example calculates the Chi-Squared PDF and presents it as a line plot.
+* With 20 degrees of freedom, we can see that the expected value of the distribution is fust short of the value 20 on the sample space.
+* This is intuitive if we think most of the density in the Gaussian dsitrbution lies between 01 and 1 and then the sum of the squared random observations from the standard Gaussian would sum to just under the number of degrees of freedom, in this case 20.
+* Although the distribution has a bell-like shape, the distribution is not symmetric.
+
+</br>
+
+![Chi-Squared probability density function](./chi_squared_pdf1.png)
+
+</br>
+
+The `chi2.cdf()` function can be used to calculate the cummulative density function over the same sample space.
+
+</br>
+
+[Chi-Squared cummulative density function](./chi_squared_cdf.py)
+
+</br>
+
+* Running the example creates a plot of the cummulative density function for the Chi-Squared distribution.
+* The distribution helps to see the likelihood for the Chi-Squared value around 20 with the fat tail to the right of the distribution that would continue on long after the end of the plot.
+
+</br>
+
+![Chi-Squared cummulative density function](./chi_squared_cdf1.png)
 
 </br>
 
